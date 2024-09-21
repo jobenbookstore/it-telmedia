@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+             background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item .description {
+            padding: 15px;
+        }
+        .gallery-item h3 {
+            margin-top: 0;
+        }
+        footer {
+             background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            border-bottom: 3px solid skyblue;
+        }
+        a:hover{
+            background-color: skyblue;
+            color: blue;
+            padding: 8px;
+            border-radius: 20px;
+        }
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IT AND ELECTRONICS MEDIA</h1>
+        <nav>
+                <a href="result.html">MATCH RESULTS</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="ele (11).JPG" alt="Shema ben">
+                <div class="description">
+                    <h3>MAN OF THE MATCH(Ben)</h3>
+                    <p>Umuhungu Volley Ball yarihiye amashuri</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="ele (6).JPG" alt="City Skyline">
+                <div class="description">
+                    <h3>IT Team</h3>
+                    <p>Abahungu bafite ubukana bigaragara rwose nokumaso</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="ele (9).JPG" alt="Wildlife">
+                <div class="description">
+                    <h3>All Teams Gathered Together</h3>
+                    <p>Ifoto yagaragayemo umutoza Mumwenda wa MAN U</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="ele (10).JPG" alt="Beach Sunset">
+                <div class="description">
+                    <h3>Teams</h3>
+                    <p>Ifoto yurwibutso</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="ele (5).JPG" alt="Historical Architecture">
+                <div class="description">
+                    <h3>Umufana</h3>
+                    <p>Moses wagaragaje gushyigikira kumande zombi. </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="ele (15).JPG"alt="Food">
+                <div class="description">
+                    <h3>Abahungu Bagaragaje imbaraga mumukino utariworoshye</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ITEL. All rights reserved.</p>
+    </footer>
+</body>
+</html>
